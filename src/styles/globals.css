@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@theme {
+  --color-dark-primary: #040d18;
+  --color-dark-secondary: #071220;
+  --color-dark-card: #0a1929;
+  --color-dark-hover: #0d2137;
+  --color-cyan: #00bcd4;
+  --color-cyan-light: #26d9ef;
+  --color-slate-text: #8ca0b8;
+  --color-slate-muted: #4a6580;
+
+  --font-family-sans: 'Montserrat', sans-serif;
+
+  --animate-fade-up: fadeUp 0.7s ease forwards;
+  --animate-fade-in: fadeIn 0.5s ease forwards;
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-scroll-bounce: scrollBounce 1.5s infinite;
+  --animate-pulse-glow: pulseGlow 2s infinite;
+
+  --keyframes-fadeUp: {
+    from: { opacity: 0; transform: translateY(28px); }
+    to: { opacity: 1; transform: translateY(0); }
+  };
+  --keyframes-fadeIn: {
+    from: { opacity: 0; }
+    to: { opacity: 1; }
+  };
+  --keyframes-marquee: {
+    from: { transform: translateX(0); }
+    to: { transform: translateX(-50%); }
+  };
+  --keyframes-scrollBounce: {
+    0%, 100%: { transform: translateY(0); opacity: 1; }
+    50%: { transform: translateY(6px); opacity: 0.4; }
+  };
+  --keyframes-pulseGlow: {
+    0%, 100%: { box-shadow: 0 0 0 0 rgba(0,188,212,0.3); }
+    50%: { box-shadow: 0 0 20px 8px rgba(0,188,212,0.3); }
+  };
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50%       { transform: translateY(6px); opacity: 0.4; }
+}
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0,188,212,0.3); }
+  50%       { box-shadow: 0 0 20px 8px rgba(0,188,212,0.3); }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: #040d18;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .text-glow-cyan {
+    text-shadow:
+      0 0 20px rgba(0, 188, 212, 0.9),
+      0 0 40px rgba(0, 188, 212, 0.6),
+      0 0 80px rgba(0, 188, 212, 0.3);
+  }
+  .border-subtle { border-color: rgba(0, 188, 212, 0.18); }
+  .border-card   { border-color: rgba(255, 255, 255, 0.06); }
+  .bg-card-gradient {
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 35%, transparent 100%);
+  }
+  .animation-delay-200 { animation-delay: 0.2s; }
+  .animation-delay-350 { animation-delay: 0.35s; }
+  .animation-delay-500 { animation-delay: 0.5s; }
+}
