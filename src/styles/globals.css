@@ -1,5 +1,6 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
 
 @theme {
   --color-dark-primary: #040d18;
@@ -74,9 +75,9 @@
 @layer utilities {
   .text-glow-cyan {
     text-shadow:
-      0 0 20px rgba(0, 188, 212, 0.9),
-      0 0 40px rgba(0, 188, 212, 0.6),
-      0 0 80px rgba(0, 188, 212, 0.3);
+      rgba(13, 162, 231, 0.4) 0px 0px 20px,
+      rgba(13, 162, 231, 0.2) 0px 0px 40px,
+      rgba(13, 162, 231, 0.1) 0px 0px 60px;;
   }
   .border-subtle { border-color: rgba(0, 188, 212, 0.18); }
   .border-card   { border-color: rgba(255, 255, 255, 0.06); }

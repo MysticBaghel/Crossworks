@@ -5,10 +5,13 @@ import ProductsSection from "../components/sections/home/ProductsSection";
 import PortfolioSection from "../components/sections/home/PortfolioSection";
 import GlobalPresenceSection from "../components/sections/home/GlobalPresenceSection";
 import PresentationSection from "../components/sections/home/PresentationSection";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 
 export default function HomePage() {
   return (
     <>
+      <Navbar />
       <HeroSection />
       <TrustedPartnersSection />
       <ExpertiseSection />
@@ -16,6 +19,7 @@ export default function HomePage() {
       <PortfolioSection />
       <GlobalPresenceSection />
       <PresentationSection />
+      <Footer />
     </>
   );
 }
