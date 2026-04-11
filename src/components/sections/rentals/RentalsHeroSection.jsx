@@ -59,7 +59,7 @@ export default function RentalsHeroSection({ onSearch, onFilter, activeFilter })
               placeholder="Search rentals..."
               value={query}
               onChange={handleSearch}
-              className="w-full bg-dark-card/80 backdrop-blur-md border border-subtle text-white placeholder:text-slate-muted rounded-full pl-12 pr-6 py-4 text-sm outline-none focus:border-cyan/40 transition-colors"
+              className="w-full bg-dark-card/80 backdrop-blur-md border border-subtle text-white placeholder:text-slate-muted rounded-full pl-12 pr-6 py-4 text-sm outline-none focus:border-blue/40 transition-colors"
             />
           </div>
 
@@ -85,7 +85,7 @@ export default function RentalsHeroSection({ onSearch, onFilter, activeFilter })
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-fade-in opacity-0 [animation-fill-mode:forwards] animation-delay-500">
         <div className="w-7 h-11 rounded-full border-2 border-white/20 flex justify-center pt-2">
-          <div className="w-1 h-2 bg-cyan rounded-full animate-scroll-bounce" />
+          <div className="w-1 h-2 bg-blue rounded-full animate-scroll-bounce" />
         </div>
       </div>
     </section>

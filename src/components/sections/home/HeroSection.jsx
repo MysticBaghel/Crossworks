@@ -30,14 +30,14 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-dark-primary/40 via-transparent to-dark-primary/80" />
 
       {/* Decorative circle */}
-      <div className="absolute -left-20 top-1/3 w-72 h-72 rounded-full border border-cyan/10 pointer-events-none" />
+      <div className="absolute -left-20 top-1/3 w-72 h-72 rounded-full border border-blue/10 pointer-events-none" />
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl w-full">
         <h1 className="font-black text-5xl md:text-6xl lg:text-7xl leading-tight text-white mb-4 animate-fade-up opacity-0 [animation-fill-mode:forwards]">
           We Build{" "}
           <span
-            className={`text-cyan text-glow-cyan whitespace-nowrap inline-block transition-all duration-200 ${
+            className={`text-blue text-glow-blue whitespace-nowrap inline-block transition-all duration-200 ${
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
@@ -54,7 +54,7 @@ export default function HeroSection() {
 
         <div className="flex gap-4 justify-center flex-wrap animate-fade-up opacity-0 [animation-fill-mode:forwards] animation-delay-350">
           <a href="#products"
-            className="px-8 py-3 bg-cyan hover:bg-cyan-light text-dark-primary font-bold rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,188,212,0.4)] no-underline">
+            className="px-8 py-3 bg-blue hover:bg-blue-light text-dark-primary font-bold rounded-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,188,212,0.4)] no-underline">
             Explore Products
           </a>
           <a href="#contact"
@@ -67,7 +67,7 @@ export default function HeroSection() {
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center animate-fade-in opacity-0 [animation-fill-mode:forwards] animation-delay-500">
         <div className="w-7 h-11 rounded-full border-2 border-white/20 flex justify-center pt-2">
-          <div className="w-1 h-2 bg-cyan rounded-full animate-scroll-bounce" />
+          <div className="w-1 h-2 bg-blue rounded-full animate-scroll-bounce" />
         </div>
       </div>
     </section>

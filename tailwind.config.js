@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        cyan: {
+        blue: {
           DEFAULT: "#00bcd4",
           light: "#26d9ef",
         },
@@ -52,7 +52,7 @@ export default {
         "pulse-glow": "pulseGlow 2s infinite",
       },
       dropShadow: {
-        cyan: [
+        blue: [
           "0 0 20px rgba(0,188,212,0.8)",
           "0 0 40px rgba(0,188,212,0.5)",
           "0 0 80px rgba(0,188,212,0.3)",

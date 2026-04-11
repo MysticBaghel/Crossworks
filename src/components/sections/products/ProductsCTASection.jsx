@@ -4,7 +4,7 @@ export default function ProductsCTASection() {
   return (
     <section className="bg-dark-secondary py-32 px-8 relative overflow-hidden">
       {/* Glow bg */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-cyan/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-blue/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-3xl mx-auto text-center relative z-10">
         <h2 className="font-black text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight">
@@ -15,7 +15,7 @@ export default function ProductsCTASection() {
         </p>
         <a
           href="#contact"
-          className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-cyan text-dark-primary font-bold text-base transition-all duration-200 hover:bg-cyan-light hover:shadow-[0_0_35px_rgba(0,188,212,0.6)] hover:-translate-y-0.5 no-underline shadow-[0_0_25px_rgba(0,188,212,0.4)]"
+          className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-blue text-dark-primary font-bold text-base transition-all duration-200 hover:bg-blue-light hover:shadow-[0_0_35px_rgba(0,188,212,0.6)] hover:-translate-y-0.5 no-underline shadow-[0_0_25px_rgba(0,188,212,0.4)]"
         >
           Get in Touch <ArrowRight size={18} />
         </a>

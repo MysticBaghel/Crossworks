@@ -16,10 +16,10 @@ export default function ExpertiseSection() {
     <section className="bg-dark-primary py-24 px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <p className="text-cyan text-xs font-bold tracking-[0.2em] uppercase mb-4">✦ OUR EXPERTISE ✦</p>
+          <p className="text-blue text-xs font-bold tracking-[0.2em] uppercase mb-4">✦ OUR EXPERTISE ✦</p>
           <h2 className="font-black text-4xl md:text-5xl text-white">
             Your Go-To for Brand Activation{" "}
-            <span className="text-cyan text-glow-cyan">& Event Technology Solutions</span>
+            <span className="text-blue text-glow-blue">& Event Technology Solutions</span>
           </h2>
         </div>
 
@@ -30,12 +30,12 @@ export default function ExpertiseSection() {
               <button key={i} onClick={() => setActive(i)}
                 className="flex flex-col items-center gap-3 px-4 pb-2 flex-1 min-w-[110px] bg-transparent border-none cursor-pointer group">
                 <div className={`rounded-full transition-all duration-200 ${
-                  active === i ? "w-3.5 h-3.5 bg-cyan shadow-[0_0_12px_rgba(0,188,212,0.6)]" : "w-2.5 h-2.5 border border-white/20"
+                  active === i ? "w-3.5 h-3.5 bg-blue shadow-[0_0_12px_rgba(0,188,212,0.6)]" : "w-2.5 h-2.5 border border-white/20"
                 }`} />
                 <span className={`text-xs text-center leading-snug transition-colors ${
                   active === i ? "text-white font-semibold" : "text-slate-text"
                 }`}>{item.label}</span>
-                {active === i && <div className="w-8 h-0.5 bg-cyan rounded-full" />}
+                {active === i && <div className="w-8 h-0.5 bg-blue rounded-full" />}
               </button>
             ))}
           </div>
@@ -43,7 +43,7 @@ export default function ExpertiseSection() {
 
         {/* Content */}
         <div key={active} className="text-center animate-fade-up opacity-0 [animation-fill-mode:forwards]">
-          <h3 className="text-cyan text-glow-cyan font-bold text-2xl mb-4">{items[active].label}</h3>
+          <h3 className="text-blue text-glow-blue font-bold text-2xl mb-4">{items[active].label}</h3>
           <p className="text-slate-text max-w-2xl mx-auto leading-relaxed mb-8">{items[active].description}</p>
           <button className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 hover:bg-white/5 text-white font-medium transition-all">
             Explore <ArrowRight size={16} />

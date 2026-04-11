@@ -41,12 +41,12 @@ function ProductCard({ product, className = "" }) {
 
       {/* Text pinned to bottom */}
       <div className="absolute bottom-0 left-0 p-6 z-10">
-        <h3 className={`font-bold text-lg mb-1 ${product.accent ? "text-cyan text-glow-cyan" : "text-white"}`}>
+        <h3 className={`font-bold text-lg mb-1 ${product.accent ? "text-blue text-glow-blue" : "text-white"}`}>
           {product.title}
         </h3>
         <p className="text-slate-text text-sm leading-relaxed">{product.subtitle}</p>
         {product.explore && (
-          <a href="#" className="inline-flex items-center gap-1 text-cyan text-sm font-semibold mt-2 no-underline hover:gap-2 transition-all">
+          <a href="#" className="inline-flex items-center gap-1 text-blue text-sm font-semibold mt-2 no-underline hover:gap-2 transition-all">
             Explore <ArrowRight size={14} />
           </a>
         )}
@@ -60,11 +60,11 @@ export default function ProductsSection() {
     <section id="products" className="bg-dark-primary py-24 px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <span className="inline-block px-4 py-1.5 rounded-full border border-subtle text-cyan text-xs font-bold tracking-[0.18em] uppercase mb-5">
+          <span className="inline-block px-4 py-1.5 rounded-full border border-subtle text-blue text-xs font-bold tracking-[0.18em] uppercase mb-5">
             ✦ SOLUTIONS
           </span>
           <h2 className="font-black text-4xl md:text-5xl text-white mb-4">
-            Our <span className="text-cyan text-glow-cyan">Products</span>
+            Our <span className="text-blue text-glow-blue">Products</span>
           </h2>
           <p className="text-slate-text max-w-md mx-auto leading-relaxed">
             Cutting-edge immersive technology solutions designed to captivate every sense.
@@ -85,7 +85,7 @@ export default function ProductsSection() {
         </div>
 
         <div className="text-center">
-          <a href="#" className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-cyan text-black font-bold transition-all duration-200 no-underline shadow-[0_0_25px_rgba(0,188,212,0.5),0_0_50px_rgba(0,188,212,0.2)] hover:shadow-[0_0_35px_rgba(0,188,212,0.7),0_0_70px_rgba(0,188,212,0.4)]">
+          <a href="#" className="inline-flex items-center gap-3 px-10 py-4 rounded-full bg-blue text-black font-bold transition-all duration-200 no-underline shadow-[0_0_25px_rgba(0,188,212,0.5),0_0_50px_rgba(0,188,212,0.2)] hover:shadow-[0_0_35px_rgba(0,188,212,0.7),0_0_70px_rgba(0,188,212,0.4)]">
             Explore All Products <ArrowRight size={18} />
           </a>
         </div>

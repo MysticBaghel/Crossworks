@@ -36,12 +36,12 @@ function ProductCard({ product, className = "" }) {
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
       {/* Text */}
       <div className="absolute bottom-0 left-0 p-6 z-10">
-        <h3 className={`font-bold text-lg mb-1 ${product.accent ? "text-cyan text-glow-cyan" : "text-white"}`}>
+        <h3 className={`font-bold text-lg mb-1 ${product.accent ? "text-blue text-glow-blue" : "text-white"}`}>
           {product.title}
         </h3>
         <p className="text-slate-text text-sm leading-relaxed">{product.subtitle}</p>
         {product.explore && (
-          <a href="#" className="inline-flex items-center gap-1 text-cyan text-sm font-semibold mt-2 no-underline hover:gap-2 transition-all">
+          <a href="#" className="inline-flex items-center gap-1 text-blue text-sm font-semibold mt-2 no-underline hover:gap-2 transition-all">
             Explore <ArrowRight size={14} />
           </a>
         )}

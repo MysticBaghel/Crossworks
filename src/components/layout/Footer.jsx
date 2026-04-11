@@ -22,7 +22,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white mb-5">Quick Links</h4>
             {["Products", "Services", "About Us", "Contact", "Portfolio"].map((item) => (
-              <a key={item} href="#" className="block text-slate-text hover:text-cyan text-sm mb-3 no-underline transition-colors">{item}</a>
+              <a key={item} href="#" className="block text-slate-text hover:text-blue text-sm mb-3 no-underline transition-colors">{item}</a>
             ))}
           </div>
 
@@ -35,7 +35,7 @@ export default function Footer() {
             <div className="flex gap-3">
               {["IG", "IN", "YT"].map((s) => (
                 <a key={s} href="#"
-                  className="w-9 h-9 rounded-full border border-subtle hover:border-cyan hover:text-cyan text-slate-text text-xs font-bold flex items-center justify-center no-underline transition-all">
+                  className="w-9 h-9 rounded-full border border-subtle hover:border-blue hover:text-blue text-slate-text text-xs font-bold flex items-center justify-center no-underline transition-all">
                   {s}
                 </a>
               ))}
@@ -46,7 +46,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-card pt-6 flex flex-wrap items-center justify-between gap-4">
           <p className="text-slate-muted text-xs">
-            © 2026 <a href="#" className="text-cyan no-underline">LogicHive</a>. All rights reserved.
+            © 2026 <a href="#" className="text-blue no-underline">LogicHive</a>. All rights reserved.
           </p>
           <div className="flex gap-2">
             {["ISO 9001", "ISO 27001"].map((b) => (

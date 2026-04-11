@@ -8,7 +8,7 @@ export default function TrustedPartnersSection() {
   return (
     <section className="bg-dark-secondary py-16 overflow-hidden">
       <div className="text-center mb-10 px-8">
-        <p className="text-cyan text-xs font-bold tracking-[0.2em] uppercase mb-3">Trusted Partners</p>
+        <p className="text-blue text-xs font-bold tracking-[0.2em] uppercase mb-3">Trusted Partners</p>
         <h2 className="font-bold text-2xl md:text-3xl text-white">Loved by Industry Leaders</h2>
       </div>
       <div className="relative overflow-hidden">

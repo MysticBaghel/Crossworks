@@ -7,7 +7,7 @@ const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Resources", href: "#resources", dropdown: ["Blog", "Case Studies", "White Papers", "Videos"] },
   { label: "About Us", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/contacts" },
 ];
 
 export default function Navbar() {
