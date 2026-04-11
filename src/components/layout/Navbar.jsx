@@ -4,7 +4,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 const navLinks = [
   { label: "Products", href: "/products" },
   { label: "Rentals", href: "/rentals" },
-  { label: "Services", href: "#services" },
+  { label: "Services", href: "/services" },
   { label: "Resources", href: "#resources", dropdown: ["Blog", "Case Studies", "White Papers", "Videos"] },
   { label: "About Us", href: "#about" },
   { label: "Contact", href: "/contacts" },
