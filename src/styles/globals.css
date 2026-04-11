@@ -7,8 +7,8 @@
   --color-dark-secondary: #071220;
   --color-dark-card: #0a1929;
   --color-dark-hover: #0d2137;
-  --color-cyan: #00bcd4;
-  --color-cyan-light: #26d9ef;
+  --color-blue: #0da2e7;
+  --color-blue-light: #66cfff;
   --color-slate-text: #8ca0b8;
   --color-slate-muted: #4a6580;
 
@@ -37,8 +37,8 @@
     50%: { transform: translateY(6px); opacity: 0.4; }
   };
   --keyframes-pulseGlow: {
-    0%, 100%: { box-shadow: 0 0 0 0 rgba(0,188,212,0.3); }
-    50%: { box-shadow: 0 0 20px 8px rgba(0,188,212,0.3); }
+    0%, 100%: { box-shadow: 0 0 0 0 rgba(26,127,193,0.3); }
+    50%: { box-shadow: 0 0 20px 8px rgba(26,127,193,0.3); }
   };
 }
 
@@ -58,8 +58,8 @@
   50%       { transform: translateY(6px); opacity: 0.4; }
 }
 @keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(0,188,212,0.3); }
-  50%       { box-shadow: 0 0 20px 8px rgba(0,188,212,0.3); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(26,127,193,0.3); }
+  50%       { box-shadow: 0 0 20px 8px rgba(26,127,193,0.3); }
 }
 
 @layer base {
@@ -73,13 +73,19 @@
 }
 
 @layer utilities {
-  .text-glow-cyan {
+  .text-glow-blue {
     text-shadow:
       rgba(13, 162, 231, 0.4) 0px 0px 20px,
-      rgba(13, 162, 231, 0.2) 0px 0px 40px,
-      rgba(13, 162, 231, 0.1) 0px 0px 60px;;
+      rgba(13, 162, 231, 0.2) 0px 0px 40px;
   }
-  .border-subtle { border-color: rgba(0, 188, 212, 0.18); }
+  .gradient-text {
+    background-image: linear-gradient(135deg, #0da2e7, #66cfff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+  .border-subtle { border-color: rgba(26, 127, 193, 0.2); }
   .border-card   { border-color: rgba(255, 255, 255, 0.06); }
   .bg-card-gradient {
     background: linear-gradient(to top, rgba(0,0,0,0.85) 35%, transparent 100%);
@@ -87,4 +93,11 @@
   .animation-delay-200 { animation-delay: 0.2s; }
   .animation-delay-350 { animation-delay: 0.35s; }
   .animation-delay-500 { animation-delay: 0.5s; }
+
+  .heading-hero {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
 }

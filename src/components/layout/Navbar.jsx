@@ -3,7 +3,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "Products", href: "/products" },
-  { label: "Rentals", href: "#rentals" },
+  { label: "Rentals", href: "/rentals" },
   { label: "Services", href: "#services" },
   { label: "Resources", href: "#resources", dropdown: ["Blog", "Case Studies", "White Papers", "Videos"] },
   { label: "About Us", href: "#about" },
@@ -26,7 +26,7 @@ export default function Navbar() {
       scrolled ? "bg-dark-primary/90 backdrop-blur-md border-b border-subtle" : "bg-dark-primary/60 backdrop-blur-sm"
     }`}>
       <div className="max-w-7xl mx-auto px-8 flex items-center justify-between py-4">
-        <a href="#" className="flex items-center gap-3 no-underline">
+        <a href="\" className="flex items-center gap-3 no-underline">
           <LogoIcon />
           <span className="font-black text-xl tracking-widest text-white uppercase">CROSSWORKS</span>
         </a>
