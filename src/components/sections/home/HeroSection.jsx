@@ -34,7 +34,7 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl w-full">
-        <h1 className="font-black text-5xl md:text-6xl lg:text-7xl leading-tight text-white mb-4 animate-fade-up opacity-0 [animation-fill-mode:forwards]">
+        <h1 className="heading-hero font-black text-5xl md:text-6xl lg:text-7xl leading-tight text-white mb-4 animate-fade-up opacity-0 [animation-fill-mode:forwards]">
           We Build{" "}
           <span
             className={`text-blue text-glow-blue whitespace-nowrap inline-block transition-all duration-200 ${

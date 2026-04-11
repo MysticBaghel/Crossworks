@@ -19,7 +19,7 @@ export default function PortfolioSection() {
       <div className="max-w-7xl mx-auto">
         <div className="mb-8">
           <p className="text-blue text-xs font-bold tracking-[0.2em] uppercase mb-3">PORTFOLIO</p>
-          <h2 className="font-black text-4xl md:text-5xl text-white">We've Cooked Up Something Exceptional</h2>
+          <h2 className="heading-hero font-black text-4xl md:text-5xl text-white">We've Cooked Up Something Exceptional</h2>
         </div>
 
         {/* Card */}
@@ -28,7 +28,7 @@ export default function PortfolioSection() {
           <span className="inline-block px-4 py-1.5 rounded-full bg-blue/10 text-blue text-xs font-semibold mb-4 w-fit">
             {item.tag}
           </span>
-          <h3 className="font-black text-3xl md:text-4xl text-white">{item.title}</h3>
+          <h3 className="heading-hero font-black text-3xl md:text-4xl text-white">{item.title}</h3>
         </div>
 
         {/* Controls */}

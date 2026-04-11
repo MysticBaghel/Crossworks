@@ -17,7 +17,7 @@ export default function ExpertiseSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <p className="text-blue text-xs font-bold tracking-[0.2em] uppercase mb-4">✦ OUR EXPERTISE ✦</p>
-          <h2 className="font-black text-4xl md:text-5xl text-white">
+          <h2 className="heading-hero font-black text-4xl md:text-5xl text-white">
             Your Go-To for Brand Activation{" "}
             <span className="text-blue text-glow-blue">& Event Technology Solutions</span>
           </h2>

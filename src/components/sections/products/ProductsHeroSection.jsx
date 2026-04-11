@@ -21,7 +21,7 @@ export default function ProductsHeroSection() {
         </span>
 
         {/* Heading */}
-        <h1 className="font-black text-6xl md:text-7xl lg:text-8xl text-white leading-tight mb-6 animate-fade-up opacity-0 [animation-fill-mode:forwards] animation-delay-200">
+        <h1 className="heading-hero font-black text-6xl md:text-7xl lg:text-8xl text-white leading-tight mb-6 animate-fade-up opacity-0 [animation-fill-mode:forwards] animation-delay-200">
           Our <span className="text-blue text-glow-blue">Products</span>
         </h1>
 

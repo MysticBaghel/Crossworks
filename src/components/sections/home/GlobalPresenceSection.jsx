@@ -16,7 +16,7 @@ export default function GlobalPresenceSection() {
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-subtle text-blue text-xs font-bold tracking-[0.18em] uppercase mb-5">
             🌐 Worldwide Operations
           </span>
-          <h2 className="font-black text-4xl md:text-5xl text-white mb-4">Our Global Presence</h2>
+          <h2 className="heading-hero font-black text-4xl md:text-5xl text-white mb-4">Our Global Presence</h2>
           <p className="text-slate-text max-w-lg mx-auto leading-relaxed">
             We are proud to have a growing international footprint, with offices in the United States, the Middle East, and India.
           </p>

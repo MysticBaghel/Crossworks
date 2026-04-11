@@ -10,7 +10,7 @@ export default function RentalsCTASection() {
         <span className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-subtle text-blue text-xs font-bold tracking-[0.18em] uppercase mb-8">
           ✦ CUSTOM PACKAGES
         </span>
-        <h2 className="font-black text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight">
+        <h2 className="heading-hero font-black text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight">
           Need a Custom Rental Package?
         </h2>
         <p className="text-slate-text text-lg leading-relaxed mb-10 max-w-xl mx-auto">

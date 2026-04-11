@@ -133,7 +133,7 @@ export default function ServicesPoweredBySection() {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="font-black text-4xl md:text-5xl text-white">
+          <h2 className="heading-hero font-black text-4xl md:text-5xl text-white">
             Powered By Our{" "}
             <span className="text-blue" style={{ textShadow: "0 0 30px rgba(0,188,212,0.4)" }}>
               Products

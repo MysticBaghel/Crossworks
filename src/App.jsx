@@ -5,6 +5,7 @@ import ProductsPage from "./pages/ProductsPage";
 import RentalsPage from "./pages/RentalsPage";
 import ContactPage from "./pages/ContactPage";
 import ServicesPage from "./pages/ServicesPage";
+import AboutPage from "./pages/AboutPage";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/rentals" element={<RentalsPage />} />
         <Route path="/contacts" element={<ContactPage />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </BrowserRouter>
   );

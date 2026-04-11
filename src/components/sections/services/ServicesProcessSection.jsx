@@ -74,7 +74,7 @@ export default function ServicesProcessSection() {
 
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="font-black text-4xl md:text-5xl text-white">
+          <h2 className="heading-hero font-black text-4xl md:text-5xl text-white">
             Our <span className="text-blue text-glow-blue">Process</span>
           </h2>
           <p className="text-slate-text mt-4 text-lg">
