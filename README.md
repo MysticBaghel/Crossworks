@@ -18,7 +18,7 @@ Built with **React 18**, **Vite**, **Tailwind CSS v4**, and **React Router v7**.
 ```bash
 # Clone the repository
 git clone https://github.com/MysticBaghel/Crossworks.git
-cd Crossworks
+cd Crossworks/Frontend
 
 # Install dependencies
 npm install
@@ -43,78 +43,82 @@ The app will be running at `http://localhost:5173`
 
 ```
 Crossworks/
-├── index.html                        # App entry point
-├── vite.config.js                    # Vite configuration
-├── tailwind.config.js                # Tailwind theme & custom tokens
-├── package.json
+├── .gitignore
+├── README.md
 │
-└── src/
-    ├── main.jsx                      # React root, router setup
-    ├── App.jsx                       # Route definitions
+└── Frontend/
+    ├── index.html                        # App entry point
+    ├── vite.config.js                    # Vite configuration
+    ├── tailwind.config.js                # Tailwind theme & custom tokens
+    ├── package.json
     │
-    ├── styles/
-    │   └── globals.css               # Global styles, font imports, CSS vars
-    │
-    ├── Public/                       # Static image assets
-    │   ├── logo.png
-    │   ├── bg01.jpg – bg04.jpg       # Hero background images
-    │   ├── 1.jpg – 10.jpg            # Portfolio/gallery images
-    │   └── *.jpg                     # Named lifestyle/event images
-    │
-    ├── data/
-    │   └── expertiseData.js          # Content data for all expertise pages
-    │
-    ├── pages/
-    │   ├── HomePage.jsx
-    │   ├── ProductsPage.jsx
-    │   ├── RentalsPage.jsx
-    │   ├── ServicesPage.jsx
-    │   ├── AboutPage.jsx
-    │   ├── ContactPage.jsx
-    │   ├── ExpertisePage.jsx         # Dynamic page driven by slug + expertiseData
-    │   └── resourcesPages/
-    │       ├── BlogPage.jsx
-    │       ├── CareersPage.jsx
-    │       ├── ExhibitionCalendarPage.jsx
-    │       └── PortfolioPage.jsx
-    │
-    └── components/
-        ├── layout/
-        │   ├── Navbar.jsx            # Fixed top nav with dropdown + mobile menu
-        │   └── Footer.jsx
+    └── src/
+        ├── main.jsx                      # React root, router setup
+        ├── App.jsx                       # Route definitions
         │
-        └── sections/
-            ├── home/
-            │   ├── HeroSection.jsx
-            │   ├── ProductsSection.jsx
-            │   ├── ExpertiseSection.jsx
-            │   ├── PresentationSection.jsx
-            │   ├── PortfolioSection.jsx
-            │   ├── GlobalPresenceSection.jsx
-            │   └── TrustedPartnersSection.jsx
-            ├── about/
-            │   ├── AboutHeroSection.jsx
-            │   ├── AboutMissionSection.jsx
-            │   ├── AboutJourneySection.jsx
-            │   ├── AboutLifeSection.jsx
-            │   ├── AboutPartnersSection.jsx
-            │   └── AboutCTASection.jsx
-            ├── contact/
-            │   ├── ContactHeroSection.jsx
-            │   └── ContactFormSection.jsx
-            ├── products/
-            │   ├── ProductsHeroSection.jsx
-            │   ├── ProductsGridSection.jsx
-            │   └── ProductsCTASection.jsx
-            ├── rentals/
-            │   ├── RentalsHeroSection.jsx
-            │   └── RentalsCTASection.jsx
-            └── services/
-                ├── ServicesHeroSection.jsx
-                ├── ServicesExpertiseSection.jsx
-                ├── ServicesPoweredBySection.jsx
-                ├── ServicesProcessSection.jsx
-                └── ServicesCTASection.jsx
+        ├── styles/
+        │   └── globals.css               # Global styles, font imports, CSS vars
+        │
+        ├── Public/                       # Static image assets
+        │   ├── logo.png
+        │   ├── bg01.jpg – bg04.jpg       # Hero background images
+        │   ├── 1.jpg – 10.jpg            # Portfolio/gallery images
+        │   └── *.jpg                     # Named lifestyle/event images
+        │
+        ├── data/
+        │   └── expertiseData.js          # Content data for all expertise pages
+        │
+        ├── pages/
+        │   ├── HomePage.jsx
+        │   ├── ProductsPage.jsx
+        │   ├── RentalsPage.jsx
+        │   ├── ServicesPage.jsx
+        │   ├── AboutPage.jsx
+        │   ├── ContactPage.jsx
+        │   ├── ExpertisePage.jsx         # Dynamic page driven by slug + expertiseData
+        │   └── resourcesPages/
+        │       ├── BlogPage.jsx
+        │       ├── CareersPage.jsx
+        │       ├── ExhibitionCalendarPage.jsx
+        │       └── PortfolioPage.jsx
+        │
+        └── components/
+            ├── layout/
+            │   ├── Navbar.jsx            # Fixed top nav with dropdown + mobile menu
+            │   └── Footer.jsx
+            │
+            └── sections/
+                ├── home/
+                │   ├── HeroSection.jsx
+                │   ├── ProductsSection.jsx
+                │   ├── ExpertiseSection.jsx
+                │   ├── PresentationSection.jsx
+                │   ├── PortfolioSection.jsx
+                │   ├── GlobalPresenceSection.jsx
+                │   └── TrustedPartnersSection.jsx
+                ├── about/
+                │   ├── AboutHeroSection.jsx
+                │   ├── AboutMissionSection.jsx
+                │   ├── AboutJourneySection.jsx
+                │   ├── AboutLifeSection.jsx
+                │   ├── AboutPartnersSection.jsx
+                │   └── AboutCTASection.jsx
+                ├── contact/
+                │   ├── ContactHeroSection.jsx
+                │   └── ContactFormSection.jsx
+                ├── products/
+                │   ├── ProductsHeroSection.jsx
+                │   ├── ProductsGridSection.jsx
+                │   └── ProductsCTASection.jsx
+                ├── rentals/
+                │   ├── RentalsHeroSection.jsx
+                │   └── RentalsCTASection.jsx
+                └── services/
+                    ├── ServicesHeroSection.jsx
+                    ├── ServicesExpertiseSection.jsx
+                    ├── ServicesPoweredBySection.jsx
+                    ├── ServicesProcessSection.jsx
+                    └── ServicesCTASection.jsx
 ```
 
 ---
@@ -216,7 +220,6 @@ Central data file for all expertise pages. Each entry contains:
   deliverSubtitle: "...",
   cards: [
     { title: "...", desc: "..." },
-    ...
   ]
 }
 ```
