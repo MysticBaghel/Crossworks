@@ -59,7 +59,7 @@ Crossworks/
         ├── styles/
         │   └── globals.css               # Global styles, font imports, CSS vars
         │
-        ├── Public/                       # Static image assets
+        ├── public/                       # Static image assets
         │   ├── logo.png
         │   ├── bg01.jpg – bg04.jpg       # Hero background images
         │   ├── 1.jpg – 10.jpg            # Portfolio/gallery images
@@ -215,7 +215,7 @@ Central data file for all expertise pages. Each entry contains:
   tagline: "Full-Sensory Experiences",
   heading: "Design Exhibition Spaces That Captivate Every Sense",
   description: "...",
-  bg: "/src/Public/bg02.png",
+  bg: "/src/public/bg02.png",
   deliverTitle: "What We Deliver",
   deliverSubtitle: "...",
   cards: [
@@ -250,6 +250,6 @@ Central data file for all expertise pages. Each entry contains:
 
 ## 📝 Notes
 
-- Images are stored in `src/Public/` and referenced via relative import paths or direct strings in data files.
+- Images are stored in `src/public/` and referenced via relative import paths or direct strings in data files.
 - The project uses **Tailwind CSS v4** which has a different config approach from v3 — the `@tailwindcss/vite` plugin replaces PostCSS setup.
 - All pages follow a consistent section-based composition pattern — pages import and compose section components rather than containing inline JSX.

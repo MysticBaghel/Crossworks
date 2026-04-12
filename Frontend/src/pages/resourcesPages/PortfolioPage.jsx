@@ -2,16 +2,16 @@ import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
-import img1 from "../../Public/1.jpg";
-import img2 from "../../Public/2.jpg";
-import img3 from "../../Public/3.jpg";
-import img4 from "../../Public/4.jpg";
-import img5 from "../../Public/5.jpg";
-import img6 from "../../Public/6.jpg";
-import img7 from "../../Public/7.jpg";
-import img8 from "../../Public/8.jpg";
-import img9 from "../../Public/9.jpg";
-import img10 from "../../Public/10.jpg";
+import img1 from "../../public/1.jpg";
+import img2 from "../../public/2.jpg";
+import img3 from "../../public/3.jpg";
+import img4 from "../../public/4.jpg";
+import img5 from "../../public/5.jpg";
+import img6 from "../../public/6.jpg";
+import img7 from "../../public/7.jpg";
+import img8 from "../../public/8.jpg";
+import img9 from "../../public/9.jpg";
+import img10 from "../../public/10.jpg";
 
 const CATEGORIES = ["All", "Experience Centres", "Brand Activations", "Exhibitions", "Events"];
 

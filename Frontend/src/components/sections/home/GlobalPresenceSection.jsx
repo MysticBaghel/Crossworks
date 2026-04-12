@@ -1,4 +1,4 @@
-import bg02 from "../../../Public/bg02.png";
+import bg02 from "../../../public/bg02.png";
 
 const regions = [
   { region: "Americas", locations: [{ city: "Delaware", country: "United States" }] },

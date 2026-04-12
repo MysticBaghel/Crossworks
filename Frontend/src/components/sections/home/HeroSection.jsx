@@ -1,4 +1,4 @@
-import bg01 from "../../../Public/bg01.jpg"
+import bg01 from "../../../public/bg01.jpg"
 import { useState, useEffect } from "react";
 
 const CYCLING_WORDS = ["Immersive", "Innovative", "Next Generation", "Memorable"];

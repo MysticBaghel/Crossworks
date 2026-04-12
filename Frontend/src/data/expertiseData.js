@@ -1,6 +1,6 @@
 
 
-import bg1 from "../Public/bg01.jpg";
+import bg1 from "../public/bg01.jpg";
 
 export const expertiseItems = [
   {

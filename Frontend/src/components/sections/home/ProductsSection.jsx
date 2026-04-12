@@ -63,7 +63,7 @@ export default function ProductsSection() {
           <span className="inline-block px-4 py-1.5 rounded-full border border-subtle text-blue text-xs font-bold tracking-[0.18em] uppercase mb-5">
             ✦ SOLUTIONS
           </span>
-          <h2 className="font-black text-4xl md:text-5xl text-white mb-4">
+          <h2 className="heading-hero font-black text-4xl md:text-5xl text-white mb-4">
             Our <span className="text-blue text-glow-blue">Products</span>
           </h2>
           <p className="text-slate-text max-w-md mx-auto leading-relaxed">

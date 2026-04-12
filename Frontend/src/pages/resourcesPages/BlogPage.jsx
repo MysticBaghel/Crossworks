@@ -3,11 +3,11 @@ import { Calendar, Clock, ArrowRight, Bookmark } from "lucide-react";
 import Navbar from "../../components/layout/Navbar";
 import Footer from "../../components/layout/Footer";
 import img1 from "../../public/BuildInnovate.jpg";
-import img2 from "../../Public/Collaborate.jpg";
-import img3 from "../../Public/DemoDay.jpg";
-import img4 from "../../Public/LearnGrow.jpg";
-import img5 from "../../Public/TechExploration.jpg";
-import img6 from "../../Public/WorkMode.jpg";
+import img2 from "../../public/Collaborate.jpg";
+import img3 from "../../public/DemoDay.jpg";
+import img4 from "../../public/LearnGrow.jpg";
+import img5 from "../../public/TechExploration.jpg";
+import img6 from "../../public/WorkMode.jpg";
 
 const CATEGORIES = ["All", "Technology", "Design", "Events", "Industry"];
 
