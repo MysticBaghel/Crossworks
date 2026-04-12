@@ -5,7 +5,16 @@ const navLinks = [
   { label: "Products", href: "/products" },
   { label: "Rentals", href: "/rentals" },
   { label: "Services", href: "/services" },
-  { label: "Resources", href: "#resources", dropdown: ["Blog", "Case Studies", "White Papers", "Videos"] },
+  {
+    label: "Resources",
+    href: "#resources",
+    dropdown: [
+      { label: "Portfolio", href: "/portfolio" },
+      { label: "Exhibition Calendar", href: "/exhibition-calendar" },
+      { label: "Blog", href: "/blog" },
+      { label: "Careers", href: "/careers" },
+    ],
+  },
   { label: "About Us", href: "/about" },
   { label: "Contact", href: "/contacts" },
 ];
@@ -45,8 +54,8 @@ export default function Navbar() {
                 {resourcesOpen && (
                   <div className="absolute top-[calc(100%+12px)] left-1/2 -translate-x-1/2 bg-dark-card border border-subtle rounded-xl p-2 min-w-[160px] shadow-2xl">
                     {link.dropdown.map((item) => (
-                      <a key={item} href="#" className="block px-4 py-2 text-slate-text hover:text-white hover:bg-dark-hover text-sm rounded-lg transition-all no-underline">
-                        {item}
+                      <a key={item.label} href={item.href} className="block px-4 py-2 text-slate-text hover:text-white hover:bg-dark-hover text-sm rounded-lg transition-all no-underline">
+                        {item.label}
                       </a>
                     ))}
                   </div>
