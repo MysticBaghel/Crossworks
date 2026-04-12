@@ -10,6 +10,7 @@ import PortfolioPage from "./pages/resourcesPages/PortfolioPage";
 import ExhibitionCalendarPage from "./pages/resourcesPages/ExhibitionCalendarPage";
 import BlogPage from "./pages/resourcesPages/BlogPage";
 import CareersPage from "./pages/resourcesPages/CareersPage";
+import ExpertisePage from "./pages/ExpertisePage";
 
 export default function App() {
   return (
@@ -25,8 +26,8 @@ export default function App() {
         <Route path="/exhibition-calendar" element={<ExhibitionCalendarPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/careers" element={<CareersPage />} />
+        <Route path="/expertise/:slug" element={<ExpertisePage />} />
       </Routes>
     </BrowserRouter>
   );
 }
-

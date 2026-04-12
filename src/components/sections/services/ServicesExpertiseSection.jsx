@@ -123,7 +123,7 @@ export default function ServicesExpertiseSection() {
             <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-blue/5 blur-3xl pointer-events-none" />
 
             {/* Stat */}
-            <p className="text-blue heading-hero font-black text-6xl md:text-7xl mb-1" style={{ textShadow: "0 0 30px rgba(0,188,212,0.4)" }}>
+            <p className="text-blue font-black text-6xl md:text-7xl mb-1" style={{ textShadow: "0 0 30px rgba(0,188,212,0.4)" }}>
               {current.stat}
             </p>
             <p className="text-slate-text text-sm mb-8">{current.statLabel}</p>

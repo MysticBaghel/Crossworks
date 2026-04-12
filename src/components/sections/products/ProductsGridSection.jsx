@@ -16,10 +16,10 @@ const products = [
   { title: "AR & VR", subtitle: "We are Leading AR & VR Solutions Provider", img: img3 },
   { title: "Projection Mapping", subtitle: "We are Leading Projection Mapping Agency", img: img4 },
   { title: "Kinetics", subtitle: "We are Leading Kinetic Display Solutions Provider", img: img5 },
-  { title: "Custom LED Display", subtitle: "We are Leading Custom LED Display Provider", img: img6, accent: true, explore: true },
+  { title: "Custom LED Display", subtitle: "We are Leading Custom LED Display Provider", img: img6},
   { title: "Interactive Games", subtitle: "We are Leading Interactive Gaming Solutions Provider", img: img7 },
   { title: "Dynamic LED Wall", subtitle: "We are Leading Dynamic LED Wall Provider", img: img8 },
-  { title: "Gen AI", subtitle: "We are Leading Generative AI Solutions Provider", img: img9, accent: true, explore: true },
+  { title: "Gen AI", subtitle: "We are Leading Generative AI Solutions Provider", img: img9},
   { title: "Robotics", subtitle: "We are Leading Robotics Solutions Provider", img: img10 },
 ];
 

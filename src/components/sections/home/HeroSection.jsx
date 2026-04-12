@@ -20,7 +20,6 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-dark-primary">
-      {/* BG Image — drop your image in /public and update src */}
       <img
         src={bg01}
         alt=""

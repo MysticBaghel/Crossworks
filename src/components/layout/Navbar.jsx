@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
+import logo from "../../public/logo.png";
 
 const navLinks = [
   { label: "Products", href: "/products" },
@@ -30,23 +31,33 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!e.target.closest("[data-dropdown]")) {
+        setResourcesOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? "bg-dark-primary/90 backdrop-blur-md border-b border-subtle" : "bg-dark-primary/60 backdrop-blur-sm"
+      scrolled ? "bg-dark-primary/90 backdrop-blur-md border-b border-subtle" : "bg-transparent"
     }`}>
-      <div className="max-w-7xl mx-auto px-8 flex items-center justify-between py-4">
-        <a href="\" className="flex items-center gap-3 no-underline">
-          <LogoIcon />
-          <span className="font-black text-xl tracking-widest text-white uppercase">CROSSWORKS</span>
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between py-5">
+        <a href="/" className="flex items-center gap-2 no-underline">
+          <img src={logo} alt="Crossworks" className="h-7 w-auto" />
+          <span className="font-black text-lg tracking-widest text-white uppercase">CROSSWORKS</span>
         </a>
 
-        <ul className="hidden md:flex items-center gap-8 list-none m-0 p-0">
+        <ul className="hidden md:flex items-center gap-6 list-none m-0 p-0">
           {navLinks.map((link) =>
             link.dropdown ? (
-              <li key={link.label} className="relative">
+              <li key={link.label} className="relative" data-dropdown>
                 <button
                   onClick={() => setResourcesOpen((p) => !p)}
-                  className="flex items-center gap-1 text-slate-text hover:text-white text-sm font-medium transition-colors bg-transparent border-none cursor-pointer p-0"
+                  className="flex items-center gap-1 text-white/80 hover:text-white text-sm font-medium transition-colors bg-transparent border-none cursor-pointer p-0"
                 >
                   {link.label}
                   <ChevronDown size={14} className={`transition-transform duration-200 ${resourcesOpen ? "rotate-180" : ""}`} />
@@ -63,7 +74,7 @@ export default function Navbar() {
               </li>
             ) : (
               <li key={link.label}>
-                <a href={link.href} className="text-slate-text hover:text-white text-sm font-medium transition-colors no-underline">
+                <a href={link.href} className="text-white/80 hover:text-white text-sm font-medium transition-colors no-underline">
                   {link.label}
                 </a>
               </li>
@@ -87,16 +98,5 @@ export default function Navbar() {
         </div>
       )}
     </nav>
-  );
-}
-
-function LogoIcon() {
-  return (
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-      <circle cx="18" cy="18" r="17" stroke="white" strokeWidth="1.5" />
-      <path d="M10 13 L18 10 L26 13 L18 16 Z" fill="white" />
-      <path d="M10 13 L10 23 L18 26 L18 16 Z" fill="white" fillOpacity="0.6" />
-      <path d="M26 13 L26 23 L18 26 L18 16 Z" fill="white" fillOpacity="0.3" />
-    </svg>
   );
 }

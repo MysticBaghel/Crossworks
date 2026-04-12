@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function RentalsHeroSection({ onSearch, onFilter, activeFilter }) {
   const [query, setQuery] = useState("");
 
-  const categories = ["All"];
+  const categories = ["All", "Displays", "AR & VR", "Interactive", "Hologram", "LED"];
 
   const handleSearch = (e) => {
     setQuery(e.target.value);

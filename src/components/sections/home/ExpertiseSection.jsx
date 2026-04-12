@@ -1,51 +1,77 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import { expertiseItems } from "../../../data/expertiseData";
 
-const items = [
-  { label: "Experiential Marketing", description: "We design immersive brand experiences that forge emotional connections, drive foot traffic, and create lasting impressions through multi-sensory storytelling." },
-  { label: "Interactive Museums", description: "Transforming museum spaces with cutting-edge interactive displays, AR/VR exhibits, and digital installations that educate and inspire visitors of all ages." },
-  { label: "Event & Conferences", description: "End-to-end AV and experiential solutions for corporate events, product launches, and conferences — making every moment unforgettable." },
-  { label: "Brand Activations", description: "We create innovative brand activations that generate buzz, drive foot traffic, and leave lasting impressions on your target audience through technology and creativity." },
-  { label: "Immersive Exhibitions", description: "From trade show booths to full-scale immersive worlds, we design exhibition environments that captivate audiences and communicate your brand's story powerfully." },
-  { label: "Innovation Center", description: "Future-ready innovation centers equipped with the latest interactive technologies, enabling organizations to showcase their R&D and attract top talent." },
+function Particle({ style }) {
+  return <div className="absolute rounded-full bg-blue/60 pointer-events-none" style={{ width: 5, height: 5, ...style }} />;
+}
+
+const PARTICLES = [
+  { top: "18%", left: "4%" }, { top: "62%", left: "2%" }, { top: "38%", left: "8%" },
+  { top: "80%", left: "14%" }, { top: "12%", left: "22%" }, { top: "55%", left: "30%" },
+  { top: "75%", left: "42%" }, { top: "20%", left: "58%" }, { top: "88%", left: "68%" },
+  { top: "35%", left: "78%" }, { top: "65%", left: "88%" }, { top: "10%", left: "94%" },
+  { top: "50%", left: "96%" }, { top: "42%", left: "50%", opacity: 0.3 },
 ];
 
 export default function ExpertiseSection() {
-  const [active, setActive] = useState(3);
+  const [active, setActive] = useState(4);
+  const navigate = useNavigate();
+  const current = expertiseItems[active];
+
   return (
-    <section className="bg-dark-primary py-24 px-8">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-dark-primary py-24 px-8">
+      {PARTICLES.map((p, i) => (
+        <Particle key={i} style={{ top: p.top, left: p.left, opacity: p.opacity ?? 0.55 }} />
+      ))}
+
+      <div className="relative z-10 max-w-6xl w-full mx-auto">
+        {/* Heading */}
         <div className="text-center mb-14">
-          <p className="text-blue text-xs font-bold tracking-[0.2em] uppercase mb-4">✦ OUR EXPERTISE ✦</p>
-          <h2 className="heading-hero font-black text-4xl md:text-5xl text-white">
+          <p className="text-blue text-xs font-bold tracking-[0.2em] uppercase mb-5">✦ OUR EXPERTISE ✦</p>
+          <h2 className="heading-hero font-black text-white leading-tight">
             Your Go-To for Brand Activation{" "}
             <span className="text-blue text-glow-blue">& Event Technology Solutions</span>
           </h2>
         </div>
 
-        {/* Tabs */}
-        <div className="bg-dark-card border border-subtle rounded-2xl p-6 mb-8 overflow-x-auto">
-          <div className="flex justify-between min-w-max md:min-w-0 gap-2">
-            {items.map((item, i) => (
-              <button key={i} onClick={() => setActive(i)}
-                className="flex flex-col items-center gap-3 px-4 pb-2 flex-1 min-w-[110px] bg-transparent border-none cursor-pointer group">
-                <div className={`rounded-full transition-all duration-200 ${
-                  active === i ? "w-3.5 h-3.5 bg-blue shadow-[0_0_12px_rgba(0,188,212,0.6)]" : "w-2.5 h-2.5 border border-white/20"
+        {/* Tabs bar */}
+        <div className="bg-dark-card/80 backdrop-blur-sm border border-subtle rounded-2xl mb-10">
+          <div className="flex">
+            {expertiseItems.map((item, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                style={{ transformOrigin: "center center" }}
+                className="relative flex flex-col items-center justify-center gap-4 py-8 px-2 flex-1 bg-transparent border-none cursor-pointer transition-all duration-300 ease-out hover:scale-110"
+              >
+                <div className={`rounded-full transition-all duration-300 ${
+                  active === i
+                    ? "w-5 h-5 bg-blue shadow-[0_0_18px_6px_rgba(0,188,212,0.6)]"
+                    : "w-4 h-4 border-2 border-white/30"
                 }`} />
-                <span className={`text-xs text-center leading-snug transition-colors ${
-                  active === i ? "text-white font-semibold" : "text-slate-text"
-                }`}>{item.label}</span>
-                {active === i && <div className="w-8 h-0.5 bg-blue rounded-full" />}
+                <span className={`text-center font-bold leading-snug transition-all duration-300 ${
+                  active === i ? "text-white text-sm" : "text-slate-text text-xs"
+                }`}>
+                  {item.label}
+                </span>
+                <div className={`absolute bottom-3 h-[2px] bg-blue rounded-full transition-all duration-300 ${
+                  active === i ? "w-10" : "w-0"
+                }`} />
               </button>
             ))}
           </div>
         </div>
 
-        {/* Content */}
+        {/* Description */}
         <div key={active} className="text-center animate-fade-up opacity-0 [animation-fill-mode:forwards]">
-          <h3 className="text-blue text-glow-blue font-bold text-2xl mb-4">{items[active].label}</h3>
-          <p className="text-slate-text max-w-2xl mx-auto leading-relaxed mb-8">{items[active].description}</p>
-          <button className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/20 hover:bg-white/5 text-white font-medium transition-all">
+          <h3 className="text-blue text-glow-blue font-bold text-2xl md:text-3xl mb-4">{current.label}</h3>
+          <p className="text-slate-text text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-8">{current.description}</p>
+          <button
+            onClick={() => navigate(`/expertise/${current.slug}`)}
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-dark-card/80 border border-white/20 hover:border-blue/40 hover:bg-dark-hover text-white font-semibold transition-all duration-200"
+          >
             Explore <ArrowRight size={16} />
           </button>
         </div>

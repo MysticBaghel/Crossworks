@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 
-import img1 from "../../../Public/1.jpg";
-import img2 from "../../../Public/2.jpg";
-import img3 from "../../../Public/3.jpg";
-import img4 from "../../../Public/4.jpg";
-import img5 from "../../../Public/5.jpg";
-import img6 from "../../../Public/6.jpg";
-import img7 from "../../../Public/7.jpg";
-import img8 from "../../../Public/8.jpg";
-import img9 from "../../../Public/9.jpg";
-import img10 from "../../../Public/10.jpg";
+import img1 from "../../../public/1.jpg";
+import img2 from "../../../public/2.jpg";
+import img3 from "../../../public/3.jpg";
+import img4 from "../../../public/4.jpg";
+import img5 from "../../../public/5.jpg";
+import img6 from "../../../public/6.jpg";
+import img7 from "../../../public/7.jpg";
+import img8 from "../../../public/8.jpg";
+import img9 from "../../../public/9.jpg";
+import img10 from "../../../public/10.jpg";
 
 const products = [
   { title: "3D Hologram", subtitle: "We are Leading 3D Hologram Display Agency", img: img1 },
@@ -63,7 +63,7 @@ export default function ProductsSection() {
           <span className="inline-block px-4 py-1.5 rounded-full border border-subtle text-blue text-xs font-bold tracking-[0.18em] uppercase mb-5">
             ✦ SOLUTIONS
           </span>
-          <h2 className="heading-hero black text-4xl md:text-5xl text-white mb-4">
+          <h2 className="font-black text-4xl md:text-5xl text-white mb-4">
             Our <span className="text-blue text-glow-blue">Products</span>
           </h2>
           <p className="text-slate-text max-w-md mx-auto leading-relaxed">

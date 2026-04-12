@@ -16,7 +16,7 @@ export default function PresentationSection() {
         <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-subtle text-blue text-xs font-bold tracking-[0.18em] uppercase mb-6">
           <Download size={12} /> Company Presentation
         </span>
-        <h2 className="heading-hero font-black text-4xl md:text-5xl text-white mb-4">Download Our Presentation</h2>
+        <h2 className="font-black text-4xl md:text-5xl text-white mb-4">Download Our Presentation</h2>
         <p className="text-slate-text leading-relaxed mb-10 max-w-md mx-auto">
           Get a detailed overview of our capabilities, services, and portfolio. Enter your business email and we'll send it right over.
         </p>
